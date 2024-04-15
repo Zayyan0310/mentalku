@@ -1,6 +1,7 @@
 :root {
   --primary: #fba834;
   --secondary: #fbdb34;
+  --navbar: #c4f0ff;
   --black: black;
   --bg: #f0fbff;
 }
@@ -174,7 +175,7 @@ body {
 }
 
 .latihan .row .latihan-card img {
-  width: none;
+  width: auto;
 }
 
 .latihan .row .latihan-card-title {
