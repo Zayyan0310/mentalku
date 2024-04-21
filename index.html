@@ -10,11 +10,14 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -31,16 +34,16 @@
               <img src="img/Mentalku.png" alt="Mentalku" style="width: 80px;">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-              <span class="fa fa-bars"></span>
-          </button>
+            <span class="fa fa-bars"></span>
+        </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <div class="navbar-nav mx-auto py-0 mt-3">
                   <a href="#home" class="nav-item nav-link active">Home</a>
-                  <a href="#section-artikel" class="nav-item nav-link">Article</a>
-                  <a href="#forum" class="nav-item nav-link">Forum</a>
-                  <a href="#pilihdokter" class="nav-item nav-link">Pilih Dokter</a>
-                  <a href="#psikotest" class="nav-item nav-link">Psikotest</a>
-                  <a href="#latihan" class="nav-item nav-link">Latihan</a>
+                  <a href="artikel.html" class="nav-item nav-link">Article</a>
+                  <a href="forum.html" class="nav-item nav-link">Forum</a>
+                  <a href="pilihdokter.html" class="nav-item nav-link">Pilih Dokter</a>
+                  <a href="psikotest.html" class="nav-item nav-link">Psikotest</a>
+                  <a href="latihan.html" class="nav-item nav-link">Latihan</a>
                   <!-- <a href="about.php" class="nav-item nav-link">About</a>
                   <a href="service.php" class="nav-item nav-link">Service</a>
                   <a href="project.php" class="nav-item nav-link">Project</a>
@@ -52,13 +55,15 @@
                       </div>
                   </div>
                   <a href="contact.php" class="nav-item nav-link">Contact</a> -->
-              </div>
-              <a href="login.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"><i data-feather="user"></i></a>
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                <div class="dropdown-menu m-0">
-                    <a href="team.php" class="dropdown-item">Our Team</a>
-                    <a href="404.php" class="dropdown-item">404 Page</a>
+                  <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.php" class="dropdown-item">Our Team</a>
+                        <a href="404.php" class="dropdown-item">404 Page</a>
+                    </div>
                 </div>
+              </div>
+              <a href="login.html" class="user py-2 px-4 ms-3 d-none d-lg-block"><i data-feather="user"></i></a>
             </div>
           </div>
       </nav>
@@ -68,37 +73,34 @@
     <!-- Hero Section Start -->
     <section class="hero" id="home">
       <main class="content pb-5">
-        <h1>Layanan Konsultasi Kesehatan Mental</h1>
-        <p>Tentukan Perjalanan Anda Menuju Kesehatan Mental Optimal</p>
-        <a href="#" class="cta">Cek Sekarang</a>
+        <h2>Layanan Konsultasi Kesehatan Mental</h2>
+        <p>"Tenang dan Terhubung: Bersama dalam Perjalanan Menuju Kesejahteraan Jiwa. Di Sini, Kamu Bisa Menemukan Ruang untuk Santai, Berbagi Cerita, dan Mendapat Dukungan. Mari Bersama-sama Menyusuri Setiap Langkah dengan Ketenangan dan Keterhubungan."</p>
+        <button href="#" class="button">Cek Sekarang!</button>
       </main>
     </section>
     <!-- Hero Section End-->
 
     <!-- Latihan Start -->
     <section class="latihan" id="latihan">
-      <h2 class="text-center pt-5 mt-5" style="color: black;">Latihan Mandiri</h2>
+      <h2 class="text-start pt-5 mt-5" style="color: black;">Latihan Mandiri</h2>
 
       <div class="latihan-container pb-5">
         <div class="latihan-card">
-          <img src="img/Group 1 (1).png" alt="" class="img-fluid rounded"/>
+          <img src="img/Group 7.png" alt="" class="img-fluid rounded"/>
           <div class="latihan-content">
-            <h4>Apa itu kecemasan?</h4>
-            <a href="" class="btn">Read More</a>
+            <a href="latihanpernafasan.html" class="btn">Mulai</a>
           </div>
         </div>
         <div class="latihan-card">
-          <img src="img/Group 2 (1).png" alt="" class="img-fluid rounded"/>
+          <img src="img/Group 8.png" alt="" class="img-fluid rounded"/>
           <div class="latihan-content">
-            <h4>Apa itu kecemasan?</h4>
-            <a href="" class="btn">Read More</a>
+            <a href="latihanpijattubuh.html" class="btn">Mulai</a>
           </div>
         </div>
         <div class="latihan-card">
-          <img src="img/Group 3 (1).png" alt="" class="img-fluid rounded"/>
+          <img src="img/Group 9.png" alt="" class="img-fluid rounded"/>
           <div class="latihan-content">
-            <h4>Apa itu kecemasan?</h4>
-            <a href="" class="btn">Read More</a>
+            <a href="latihanrelaksasiotot.html" class="btn">Mulai</a>
           </div>
         </div>
       </div>
@@ -109,75 +111,39 @@
     <!-- Latihan End -->
 
     <!-- Pilih Dokter -->
-    <section id="pilihdokter" class="swiper mySwiper">
-      <h2 class="text-center pt-5 mt-5" style="color: black;">Pilih Dokter</h2>
-      <div class="swiper-wrapper">
-        <div class="card swiper-slide">
-          <div class="card__image">
-            <img src="img/doctor.jpg" alt="card image" />
+      <section id="pilihdokter" class="pilihdokter">
+        <div class="card">
+          <div class="card-image">
+              <img src="img/Ellipse 5.png" alt="Profile image">
           </div>
-
-          <div class="card__content">
-            <span class="card__title">Psikiater</span>
-            <span class="card__name">Jonson</span>
-            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <button class="card__btn">Detail</button>
-          </div>
-        </div>
-
-        <div class="card swiper-slide">
-          <div class="card__image">
-            <img src="img/doctor.jpg" alt="card image" />
-          </div>
-
-          <div class="card__content">
-            <span class="card__title">Psikiater</span>
-            <span class="card__name">Jonson</span>
-            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <button class="card__btn">Detail</button>
-          </div>
-        </div>
-
-        <div class="card swiper-slide">
-          <div class="card__image">
-            <img src="img/doctor.jpg" alt="card image" />
-          </div>
-
-          <div class="card__content">
-            <span class="card__title">Psikiater</span>
-            <span class="card__name">Jonson</span>
-            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <button class="card__btn">Detail</button>
-          </div>
-        </div>
-
-        <div class="card swiper-slide">
-          <div class="card__image">
-            <img src="img/doctor.jpg" alt="card image" />
-          </div>
-
-          <div class="card__content">
-            <span class="card__title">Psikiater</span>
-            <span class="card__name">Jonson</span>
-            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <button class="card__btn">Detail</button>
-          </div>
-        </div>
-
-        <div class="card swiper-slide">
-          <div class="card__image">
-            <img src="img/doctor.jpg" alt="card image" />
-          </div>
-
-          <div class="card__content">
-            <span class="card__title">Psikiater</span>
-            <span class="card__name">Jonson</span>
-            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            <button class="card__btn">Detail</button>
-          </div>
-        </div>
+          <p class="name-tittle">Dr. Amanda Jones, Ph.D</p>
+          <p>Psikologi Klinis</p>
+          <p>Spesialis dalam terapi kognitif-perilaku untuk gangguan kecemasan, depresi, dan trauma.</p>
       </div>
-    </section>
+      
+      <div class="card">
+          <div class="card-image">
+              <img src="img/Ellipse 6.png" alt="Profile image">
+          </div>
+          <p class="name-tittle">Dr. Michael Smith, MD</p>
+          <p>Psikiatri</p>
+          <p>Keahlian dalam pengobatan farmakologis untuk kondisi psikiatrik seperti depresi, gangguan kecemasan, gangguan bipolar, dan skizofrenia.</p>
+      </div>
+      
+      <div class="card">
+          <div class="card-image">
+              <img src="img/Ellipse 7.png" alt="Profile image">
+          </div>
+          <p class="name-tittle">Dr. James Lee, MD</p>
+          <p>Psikiatri Klinis</p>
+          <p>Praktik klinis yang berpusat pada penilaian komprehensif dan pengobatan yang personal untuk setiap pasien.</p>
+      </div>
+      <div class="button2">
+        <a href="pilihdokter.html" class="btn2" style="display: block;">Lihat Selengkapnya</a>
+      </div>
+      
+      </section>
+   
     <!-- Pilih Dokter End -->
 
     <!-- Artikel -->
@@ -186,29 +152,27 @@
       <h2 class="text-center pt-5 mt-5" style="color: black;">Artikel</h2>
     <div class="artikel-container py-3 px-lg-5">
       <div class="artikel-card">
-        <img src="img/artikel.png" alt="" />
+        <img src="img/Rectangle 19 (1).png" alt="" />
         <div class="artikel-content">
-          <h3>Apa itu kecemasan?</h3>
-          <p>Kecemasan adalah suatu kondisi emosional yang ditandai oleh perasaan khawatir, ketegangan, atau ketakutan yang berlebihan terhadap situasi tertentu.</p>
+          <h4>Apa aktivitas atau kegiatan yang membantu Anda menjaga kesehatan mental?</h4>
           <a href="" class="btn">Read More</a>
         </div>
       </div>
       <div class="artikel-card">
-        <img src="img/artikel.png" alt="" />
+        <img src="img/Rectangle 25.png" alt="" />
         <div class="artikel-content">
-          <h3>Apa itu kecemasan?</h3>
-          <p>Kecemasan adalah suatu kondisi emosional yang ditandai oleh perasaan khawatir, ketegangan, atau ketakutan yang berlebihan terhadap situasi tertentu.</p>
+          <h4>Apakah gangguan mental dapat disembuhkan? Berapa lama dapat disembuhkan?</h4>
           <a href="" class="btn">Read More</a>
         </div>
       </div>
       <div class="artikel-card">
-        <img src="img/artikel.png" alt="" />
+        <img src="img/Rectangle 22.png" alt="" />
         <div class="artikel-content">
-          <h3>Apa itu kecemasan?</h3>
-          <p>Kecemasan adalah suatu kondisi emosional yang ditandai oleh perasaan khawatir, ketegangan, atau ketakutan yang berlebihan terhadap situasi tertentu.</p>
+          <h4>Bagaimana Anda mengenali tanda-tanda bahwa kesehatan mental Anda memerlukan perhatian ekstra?</h4>
           <a href="" class="btn">Read More</a>
         </div>
       </div>
+      <a href="artikel.html" class="btn2 py-2 px-4 ms-3 d-none d-lg-block">Lihat Selengkapnya</a>
     </div>
     </section>
     </div>
@@ -244,25 +208,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 300,
-          modifier: 1,
-          slideShadows: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
+    
 
     <!-- Feather Icons -->
     <script>

@@ -1,0 +1,371 @@
+:root {
+  --primary: #fba834;
+  --secondary: #fbdb34;
+  --navbar: #c4f0ff;
+  --black: black;
+  --bg: #f0fbff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Caladea", serif;
+  background-color: #f8edd8;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(251, 168, 52, 0.8);
+  border-bottom: 1px solid var(--bg);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #fff;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #000;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navbar-extra {
+  display: flex;
+}
+
+.nav-item {
+  display: none;
+}
+
+.navbar .user {
+  display: flex;
+  color: #000;
+}
+.pilihdokter {
+  padding: 10rem 7% 1.4rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  background-image: url(../img/Rectangle\ 16.png);
+}
+
+.swiper h2 {
+  color: #333a73;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pilihdokter {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  padding: 10rem 7% 1.4rem;
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 21em;
+  height: 90%;
+  background-color: #fedb92;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  filter: blur(1px);
+}
+
+.card__image {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: 0.2em;
+  color: black;
+}
+
+.card__name {
+  color: #333a73;
+}
+
+.card__text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+  color: black;
+}
+
+.card__btn {
+  background-color: #4b5079;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 12px 8px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button i {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+/* Social media colors */
+button.github {
+  background-color: #24292e;
+}
+
+button.twitter {
+  background-color: #1da1f2;
+}
+
+button.pinterest {
+  background-color: #d3263a;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0.3rem;
+  margin-top: 0;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #000;
+  margin: 1rem;
+}
+
+footer .socials a:hover {
+  color: #fff;
+}
+
+footer .links {
+  margin-bottom: 1.6rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .links a:hover {
+  color: #000;
+}
+
+footer .credit {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--secondary);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: white;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover {
+    transform: scaleX(0.2);
+  }
+
+  .navbar-nav .nav-item .dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .navbar-nav .nav-item:hover .dropdown-menu {
+    top: 100%;
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+    color: #fba834;
+  }
+
+  .latihan-card img {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 570px) {
+  html {
+    font-size: 50%;
+  }
+}
